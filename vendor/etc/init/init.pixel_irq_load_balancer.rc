@@ -1,0 +1,5 @@
+service vendor.pixel_irq_load_balancer /vendor/bin/pixel_irq_load_balancer
+    disabled
+    oneshot
+    user root
+    group system log

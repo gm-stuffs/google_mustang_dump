@@ -1,0 +1,614 @@
+{
+    "toa": {
+        "TOA_RF_ANT1_CH9": 2137,
+        "TOA_RF_ANT2_CH9": 2123,
+        "TOA_RF_ANT3_CH9": 2094,
+        "TOA_RF_ANT4_CH9": 0,
+        "TOA_RF_ANT1_CH5": 2129,
+        "TOA_RF_ANT2_CH5": 0,
+        "TOA_RF_ANT3_CH5": 0,
+        "TOA_RF_ANT4_CH5": 0
+    },
+    "lut": {
+        "_comment_TPC": "Length: 1 byte, Min: 0 (maximum power), Max: 106, each step increment decreases TxPower 0.25dB, recommend to set greater than 20 for linearity",
+        "_comment_POST_PCKT_CW_EN": "Length: 1 bit, Default: 0",
+        "_comment_CW_POWER_LEVEL": "Length: 7 bits, Default: 24 (3dBm), Min: 0 (9dBm), Max: 106 (-17.5dBm), step size: 2(0.5dB)",
+        "_comment_CW_PERIOD": "Length: 1 byte, Default: 9 (1.7us) , Min: 0 (0.17us), Max: 99 (17us)",
+        "_comment_CW_FREQ_OFFSET": "Length: 1 byte, Default: 250, Min: 250 (MHz), Max: 300 (MHz), step size: 5(MHz)",
+        "default": {
+            "_comment": "In case the packet UWB shall send does not match with the LUT's ANT/CH/PRF/SET_X",
+            "RF_ANT1": {
+                "Channel_5": {
+                    "PL_20": {
+                        "TPC": 106
+                    },
+                    "PL_125": {
+                        "TPC": 106
+                    },
+                    "PPCW": {
+                        "POST_PCKT_CW_EN": 0,
+                        "CW_POWER_LEVEL": 50,
+                        "CW_PERIOD": 0,
+                        "CW_FREQ_OFFSET": 270
+                    }
+                },
+                "Channel_9": {
+                    "PL_20": {
+                        "TPC": 50
+                    },
+                    "PL_125": {
+                        "TPC": 80
+                    },
+                    "PPCW": {
+                        "POST_PCKT_CW_EN": 0,
+                        "CW_POWER_LEVEL": 50,
+                        "CW_PERIOD": 0,
+                        "CW_FREQ_OFFSET": 270
+                    }
+                }
+            },
+            "RF_ANT2": {
+                "Channel_5": {
+                    "PL_20": {
+                        "TPC": 106
+                    },
+                    "PL_125": {
+                        "TPC": 106
+                    },
+                    "PPCW": {
+                        "POST_PCKT_CW_EN": 0,
+                        "CW_POWER_LEVEL": 50,
+                        "CW_PERIOD": 0,
+                        "CW_FREQ_OFFSET": 270
+                    }
+                },
+                "Channel_9": {
+                    "PL_20": {
+                        "TPC": 50
+                    },
+                    "PL_125": {
+                        "TPC": 80
+                    },
+                    "PPCW": {
+                        "POST_PCKT_CW_EN": 0,
+                        "CW_POWER_LEVEL": 50,
+                        "CW_PERIOD": 0,
+                        "CW_FREQ_OFFSET": 270
+                    }
+                }
+            }
+        },
+        "RF_ANT1": {
+            "Channel_5": {
+                "BPRF": {
+                    "SET_1": {
+                        "_comment": "SYNC PSR:64, SFD Length: 8, Num of STS: 0, Data: Yes, Data Rate: 6.8, SP0, Case 1 - BPRF Set #2",
+                        "PL_20": {
+                            "TPC": 106
+                        },
+                        "PL_60": {
+                            "TPC": 106
+                        },
+                        "PL_125": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_3": {
+                        "_comment": "SYNC PSR:64, SFD Length: 8, Num of STS: 1, STS Segment Length: 64, Data: Yes, Data Rate: 6.8, SP1, Case 2 - BPRF Set #3",
+                        "PL_125": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_4": {
+                        "_comment": "SYNC PSR:64, SFD Length: 8, Num of STS: 1, STS Segment Length: 64, Data: No, SP3, Case 3 - BPRF Set #4",
+                        "PL_0": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    }
+                },
+                "HPRF": {
+                    "SET_1": {
+                        "_comment": "SYNC PSR:64, SFD Length: 4, Num of STS: 0, Data: Yes, Data Rate: 6.8, SP0, Case 4 - HPRF Set#13",
+                        "PL_20": {
+                            "TPC": 106
+                        },
+                        "PL_125": {
+                            "TPC": 106
+                        },
+                        "PL_1023": {
+                            "TPC": 106
+                        },
+                        "PL_2047": {
+                            "TPC": 106
+                        },
+                        "PL_4095": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_3": {
+                        "_comment": "SYNC PSR:32, SFD Length: 4, Num of STS: 0, Data: Yes, Data Rate: 27.2, SP0, Case 5 - HPRF Set#15",
+                        "PL_125": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_13": {
+                        "_comment": "SYNC PSR:64, SFD Length: 4, Num of STS: 2, STS Segment Length: 128, Data: Yes, Data Rate: 6.8, SP1, Case 4 - HPRF Set#13",
+                        "PL_0": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_15": {
+                        "_comment": "SYNC PSR:32, SFD Length: 4, Num of STS: 1, STS Segment Length: 64, Data: Yes, Data Rate: 27.2, SP1, Case 5 - HPRF Set#15",
+                        "PL_0": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_21": {
+                        "_comment": "SYNC PSR:64, SFD Length: 4, Num of STS: 2, STS Segment Length: 128, Data: No, SP3, Case 6 - HPRF Set#21",
+                        "PL_0": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_31": {
+                        "_comment": "SYNC PSR:32, SFD Length: 4, Num of STS: 2, STS Segment Length: 32, Data: No, SP3, Case 7 - HPRF Set#31",
+                        "PL_0": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 49,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    }
+                }
+            },
+            "Channel_9": {
+                "BPRF": {
+                    "SET_1": {
+                        "_comment": "SYNC PSR:64, SFD Length: 8, Num of STS: 0, Data: Yes, Data Rate: 6.8, SP0, Case 2 - BPRF Set #2",
+                        "PL_20": {
+                            "TPC": 48
+                        },
+                        "PL_60": {
+                            "TPC": 54
+                        },
+                        "PL_125": {
+                            "TPC": 61
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_3": {
+                        "_comment": "SYNC PSR:64, SFD Length: 8, Num of STS: 1, STS Segment Length: 64, Data: Yes, Data Rate: 6.8, SP1, Case 2 - BPRF Set #3",
+                        "PL_125": {
+                            "TPC": 65
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_4": {
+                        "_comment": "SYNC PSR:64, SFD Length: 8, Num of STS: 1, STS Segment Length: 64, Data: No, SP3, Case 3 - BPRF Set #4",
+                        "PL_0": {
+                            "TPC": 50
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    }
+                },
+                "HPRF": {
+                    "SET_1": {
+                        "_comment": "SYNC PSR:64, SFD Length: 4, Num of STS: 0, Data: Yes, Data Rate: 6.8, SP0, Case 4 - HPRF Set#13",
+                        "PL_20": {
+                            "TPC": 65
+                        },
+                        "PL_125": {
+                            "TPC": 82
+                        },
+                        "PL_1023": {
+                            "TPC": 102
+                        },
+                        "PL_2047": {
+                            "TPC": 102
+                        },
+                        "PL_4095": {
+                            "TPC": 102
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_3": {
+                        "_comment": "SYNC PSR:32, SFD Length: 4, Num of STS: 0, Data: Yes, Data Rate: 27.2, SP0, Case 5 - HPRF Set#15",
+                        "PL_125": {
+                            "TPC": 76
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_13": {
+                        "_comment": "SYNC PSR:64, SFD Length: 4, Num of STS: 2, STS Segment Length: 128, Data: Yes, Data Rate: 6.8, SP1, Case 4 - HPRF Set#13",
+                        "PL_0": {
+                            "TPC": 85
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_15": {
+                        "_comment": "SYNC PSR:32, SFD Length: 4, Num of STS: 1, STS Segment Length: 64, Data: Yes, Data Rate: 27.2, SP1, Case 5 - HPRF Set#15",
+                        "PL_0": {
+                            "TPC": 76
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_21": {
+                        "_comment": "SYNC PSR:64, SFD Length: 4, Num of STS: 2, STS Segment Length: 128, Data: No, SP3, Case 6 - HPRF Set#21",
+                        "PL_0": {
+                            "TPC": 58
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_31": {
+                        "_comment": "SYNC PSR:32, SFD Length: 4, Num of STS: 2, STS Segment Length: 32, Data: No, SP3, Case 7 - HPRF Set#31",
+                        "PL_0": {
+                            "TPC": 50
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    }
+                }
+            }
+        },
+        "RF_ANT2": {
+            "Channel_5": {
+                "BPRF": {
+                    "SET_1": {
+                        "_comment": "SYNC PSR:64, SFD Length: 8, Num of STS: 0, Data: Yes, Data Rate: 6.8, SP0, Case 2 - BPRF Set #2",
+                        "PL_20": {
+                            "TPC": 106
+                        },
+                        "PL_60": {
+                            "TPC": 106
+                        },
+                        "PL_125": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_3": {
+                        "_comment": "SYNC PSR:64, SFD Length: 8, Num of STS: 1, STS Segment Length: 64, Data: Yes, Data Rate: 6.8, SP1, Case 3 - BPRF Set #3",
+                        "PL_125": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_4": {
+                        "_comment": "SYNC PSR:64, SFD Length: 8, Num of STS: 1, STS Segment Length: 64, Data: No, SP3, Case 4 - BPRF Set #4",
+                        "PL_0": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    }
+                },
+                "HPRF": {
+                    "SET_1": {
+                        "_comment": "SYNC PSR:64, SFD Length: 4, Num of STS: 0, Data: Yes, Data Rate: 6.8, SP0, Case 4 - HPRF Set#13",
+                        "PL_20": {
+                            "TPC": 106
+                        },
+                        "PL_125": {
+                            "TPC": 106
+                        },
+                        "PL_1023": {
+                            "TPC": 106
+                        },
+                        "PL_2047": {
+                            "TPC": 106
+                        },
+                        "PL_4095": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_3": {
+                        "_comment": "SYNC PSR:32, SFD Length: 4, Num of STS: 0, Data: Yes, Data Rate: 27.2, SP0, Case 5 - HPRF Set#15",
+                        "PL_125": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_13": {
+                        "_comment": "SYNC PSR:64, SFD Length: 4, Num of STS: 2, STS Segment Length: 128, Data: Yes, Data Rate: 6.8, SP1, Case 4 - HPRF Set#13",
+                        "PL_0": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_15": {
+                        "_comment": "SYNC PSR:32, SFD Length: 4, Num of STS: 1, STS Segment Length: 64, Data: Yes, Data Rate: 27.2, SP1, Case 5 - HPRF Set#15",
+                        "PL_0": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_21": {
+                        "_comment": "SYNC PSR:64, SFD Length: 4, Num of STS: 2, STS Segment Length: 128, Data: No, SP3, Case 6 - HPRF Set#21",
+                        "PL_0": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_31": {
+                        "_comment": "SYNC PSR:32, SFD Length: 4, Num of STS: 2, STS Segment Length: 32, Data: No, SP3, Case 7 - HPRF Set#31",
+                        "PL_0": {
+                            "TPC": 106
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    }
+                }
+            },
+            "Channel_9": {
+                "BPRF": {
+                    "SET_1": {
+                        "_comment": "SYNC PSR:64, SFD Length: 8, Num of STS: 0, Data: Yes, Data Rate: 6.8, SP0, Case 1 - BPRF Set #2",
+                        "PL_20": {
+                            "TPC": 45
+                        },
+                        "PL_60": {
+                            "TPC": 51
+                        },
+                        "PL_125": {
+                            "TPC": 58
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_3": {
+                        "_comment": "SYNC PSR:64, SFD Length: 8, Num of STS: 1, STS Segment Length: 64, Data: Yes, Data Rate: 6.8, SP1, Case 2 - BPRF Set #3",
+                        "PL_125": {
+                            "TPC": 62
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_4": {
+                        "_comment": "SYNC PSR:64, SFD Length: 8, Num of STS: 1, STS Segment Length: 64, Data: No, SP3, Case 3 - BPRF Set #4",
+                        "PL_0": {
+                            "TPC": 47
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    }
+                },
+                "HPRF": {
+                    "SET_1": {
+                        "_comment": "SYNC PSR:64, SFD Length: 4, Num of STS: 0, Data: Yes, Data Rate: 6.8, SP0, Case 4 - HPRF Set#13",
+                        "PL_20": {
+                            "TPC": 62
+                        },
+                        "PL_125": {
+                            "TPC": 79
+                        },
+                        "PL_1023": {
+                            "TPC": 102
+                        },
+                        "PL_2047": {
+                            "TPC": 102
+                        },
+                        "PL_4095": {
+                            "TPC": 102
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_3": {
+                        "_comment": "SYNC PSR:32, SFD Length: 4, Num of STS: 0, Data: Yes, Data Rate: 27.2, SP0,Case 5 - HPRF Set#15",
+                        "PL_125": {
+                            "TPC": 72
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_13": {
+                        "_comment": "SYNC PSR:64, SFD Length: 4, Num of STS: 2, STS Segment Length: 128, Data: Yes, Data Rate: 6.8, SP1, Case 4 - HPRF Set#13",
+                        "PL_0": {
+                            "TPC": 82
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_15": {
+                        "_comment": "SYNC PSR:32, SFD Length: 4, Num of STS: 1, STS Segment Length: 64, Data: Yes, Data Rate: 27.2, SP1, Case 5 - HPRF Set#15",
+                        "PL_0": {
+                            "TPC": 72
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_21": {
+                        "_comment": "SYNC PSR:64, SFD Length: 4, Num of STS: 2, STS Segment Length: 128, Data: No, SP3, Case 6 - HPRF Set#21",
+                        "PL_0": {
+                            "TPC": 55
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    },
+                    "SET_31": {
+                        "_comment": "SYNC PSR:32, SFD Length: 4, Num of STS: 2, STS Segment Length: 32, Data: No, SP3, Case 7 - HPRF Set#31",
+                        "PL_0": {
+                            "TPC": 46
+                        },
+                        "PPCW": {
+                            "POST_PCKT_CW_EN": 0,
+                            "CW_POWER_LEVEL": 50,
+                            "CW_PERIOD": 0,
+                            "CW_FREQ_OFFSET": 270
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+#
+# LGA power configuration registry script.
+#
++/power
+  mips_vote_per_sampling_rate=0.35
+  mips_max_vote=340
+
++/power/mips_voter
+  enable=1
+  fifo_flush_high_watermark=63

@@ -1,0 +1,125 @@
+{
+  "SlowioReadCntPath": "/dev/sys/block/bootdevice/slowio_read_cnt",
+  "SlowioWriteCntPath": "/dev/sys/block/bootdevice/slowio_write_cnt",
+  "SlowioUnmapCntPath": "/dev/sys/block/bootdevice/slowio_unmap_cnt",
+  "SlowioSyncCntPath": "/dev/sys/block/bootdevice/slowio_sync_cnt",
+  "CycleCountBinsPath": "/sys/class/power_supply/battery/cycle_counts",
+  "UFSLifetimeA": "/dev/sys/block/bootdevice/health_descriptor/life_time_estimation_a",
+  "UFSLifetimeB": "/dev/sys/block/bootdevice/health_descriptor/life_time_estimation_b",
+  "UFSLifetimeC": "/dev/sys/block/bootdevice/health_descriptor/life_time_estimation_c",
+  "F2fsStatsPath": "/sys/fs/f2fs/",
+  "ImpedancePath": "/sys/devices/platform/audiometrics/speaker_impedance",
+  "CodecPath": "/sys/devices/platform/audiometrics/codec_state",
+  "EEPROMPath": "/dev/battery_history",
+  "PowerMitigationStatsPath": "/sys/devices/virtual/pmic/mitigation",
+  "BrownoutReasonProp": "vendor.brownout_reason",
+  "BrownoutCsvPath": "/data/vendor/mitigation/lastmeal.csv",
+  "BrownoutLogPath": "/data/vendor/mitigation/lastmeal.txt",
+  "SpeakerTemperaturePath": "/sys/devices/platform/audiometrics/speaker_temp",
+  "SpeakerExcursionPath": "/sys/devices/platform/audiometrics/speaker_excursion",
+  "SpeakerHeartBeatPath": "/sys/devices/platform/audiometrics/speaker_heartbeat",
+  "UFSErrStatsPath": [
+    "/dev/sys/block/bootdevice/err_stats/pa_err_count",
+    "/dev/sys/block/bootdevice/err_stats/dl_err_count",
+    "/dev/sys/block/bootdevice/err_stats/nl_err_count",
+    "/dev/sys/block/bootdevice/err_stats/tl_err_count",
+    "/dev/sys/block/bootdevice/err_stats/dme_err_count",
+    "/dev/sys/block/bootdevice/err_stats/fatal_err_count",
+    "/dev/sys/block/bootdevice/err_stats/auto_hibern8_err_count"
+  ],
+  "AmsRatePath": "/sys/devices/platform/audiometrics/ams_rate_read_once",
+  "ResumeLatencyMetricsPath": "/sys/kernel/metrics/resume_latency/resume_latency_metrics",
+  "LongIRQMetricsPath": "/sys/kernel/metrics/irq/long_irq_metrics",
+  "StormIRQMetricsPath": "/sys/kernel/metrics/irq/storm_irq_metrics",
+  "IRQStatsResetPath": "/sys/kernel/metrics/irq/stats_reset",
+  "ThermalTjTripCounterConfig": [
+    {
+      "Name": "AOC",
+      "TripNumbers": [0],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_AOC",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/AOC/reset_trip_cnt"
+    },
+    {
+      "Name": "AUR",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_AUR",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/AUR/reset_trip_cnt"
+    },
+    {
+      "Name": "BIG",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_BIG",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/BIG/reset_trip_cnt"
+    },
+    {
+      "Name": "BIG_MID",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_BIG_MID",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/BIG_MID/reset_trip_cnt"
+    },
+    {
+      "Name": "GPU",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_GPU",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/GPU/reset_trip_cnt"
+    },
+    {
+      "Name": "LITTLE",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_LITTLE",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/LITTLE/reset_trip_cnt"
+    },
+    {
+      "Name": "MID",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_MID",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/MID/reset_trip_cnt"
+    },
+    {
+      "Name": "TPU",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_TPU",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/TPU/reset_trip_cnt"
+    }
+  ],
+  "TempResidencyAndResetPaths": [
+    [
+      "/sys/kernel/metrics/thermal/tr_by_group/tmu/stats",
+      "/sys/kernel/metrics/thermal/tr_by_group/tmu/stats_reset"
+    ],
+    [
+      "/sys/kernel/metrics/thermal/tr_by_group/spmic/stats",
+      "/sys/kernel/metrics/thermal/tr_by_group/spmic/stats_reset"
+    ]
+  ],
+  "ModemPcieLinkStatsPath": "/sys/devices/platform/12100000.pcie/link_stats",
+  "WifiPcieLinkStatsPath": "/sys/devices/platform/13120000.pcie/link_stats",
+  "WaterEventPaths": [
+    "/sys/bus/i2c/drivers/h2omg/44-0070",
+    "/sys/bus/i2c/drivers/h2omg/44-0071"
+  ],
+  "GMSRPath": [
+    "/sys/class/power_supply/max77779fg/gmsr",
+    "/sys/class/power_supply/maxfg_base/gmsr"
+  ],
+  "FGModelLoadingPath": [
+    "/sys/class/power_supply/max77779fg/model_state",
+    "/sys/class/power_supply/maxfg_base/model_state"
+  ],
+  "FGLogBufferPath": [
+    "/dev/logbuffer_maxfg_monitor",
+    "/dev/logbuffer_max77779fg_monitor",
+    "/dev/logbuffer_maxfg_base_monitor",
+    "/dev/logbuffer_maxfg_secondary_monitor"
+  ],
+  "AudioUevent": "/devices/virtual/amcs/amcs",
+  "TypeCPartnerUevent": "PRODUCT_TYPE=",
+  "FwUpdatePath": [
+    "/dev/logbuffer_max77779_fwupdate",
+    "/dev/logbuffer_wlc_fw_update"
+  ],
+  "FGAbnlPath": [
+    "/dev/logbuffer_max77779fg_monitor",
+    "/dev/logbuffer_maxfg_base_monitor"
+  ]
+}
