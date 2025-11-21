@@ -1,0 +1,118 @@
+# mustang specific init.rc
+import /vendor/etc/init/hw/init.laguna.rc
+
+on init && property:ro.vendor.factory=1
+    import /vendor/etc/init/hw/init.factory.rc
+
+on init
+    # eSE streset tool name
+    setprop persist.vendor.se.streset libstreset25
+    # Nfc
+    setprop persist.vendor.nfc.streset libstreset25
+
+on early-boot
+    # Wait for insmod_sh to finish all common modules
+    wait_for_prop vendor.common.modules.ready 1
+    start insmod_sh_mustang
+
+service insmod_sh_mustang /vendor/bin/insmod.sh /vendor_dlkm/etc/init.insmod.${ro.hardware}.cfg
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on property:vendor.mfgapi.touchpanel.permission=1
+    chmod 0600 /sys/devices/virtual/sec/tsp/cmd
+    chown system system /sys/devices/virtual/sec/tsp/cmd
+
+# Overrides fingerprint antispoof if following persist sysprops are set
+on boot && property:ro.build.type=userdebug && \
+           property:persist.vendor.fingerprint.disable.fake.override=0
+    setprop vendor.fingerprint.disable.fake ${persist.vendor.fingerprint.disable.fake.override}
+
+on boot && property:ro.build.type=userdebug && \
+           property:persist.vendor.fingerprint.disable.fake.override=1
+    setprop vendor.fingerprint.disable.fake ${persist.vendor.fingerprint.disable.fake.override}
+
+on boot && property:ro.build.type=userdebug && \
+           property:persist.vendor.fingerprint.disable.fake.override=100
+    setprop vendor.fingerprint.disable.fake ${persist.vendor.fingerprint.disable.fake.override}
+
+# WiFi
+on post-fs-data
+    setprop wifi.direct.interface p2p-dev-wlan0
+    setprop wifi.aware.interface aware_nmi0
+
+    # Speaker amp permission
+    chmod 644 /mnt/vendor/persist/audio/speaker.cal
+    chmod 644 /mnt/vendor/persist/audio/speaker.diag
+    # Microphone compensation file permission
+    chmod 644 /mnt/vendor/persist/audio/mic_compensation.bin
+
+# Bluetooth
+on post-fs-data
+    chown bluetooth system /sys/devices/platform/odm/odm:btbcm/rfkill/rfkill0/state
+    chown bluetooth system /sys/devices/platform/odm/odm:btbcm/rfkill/rfkill2/state
+    chown bluetooth system /sys/class/rfkill/rfkill0/state
+    chown bluetooth system /proc/bluetooth/sleep/btwake
+    chown bluetooth system /proc/bluetooth/sleep/lpm
+    chown bluetooth system /proc/bluetooth/sleep/btwrite
+    chown bluetooth system /proc/bluetooth/timesync
+    chown bluetooth system /proc/bluetooth/sleep/wakelock_ctrl
+
+# Haptics
+on property:vendor.all.modules.ready=1
+    mkdir /mnt/vendor/persist/haptics 0770 system system
+    chmod 770 /mnt/vendor/persist/haptics
+    chmod 440 /mnt/vendor/persist/haptics/cs40l26.cal
+    chown system system /mnt/vendor/persist/haptics
+    chown system system /mnt/vendor/persist/haptics/cs40l26.cal
+
+    chown system system /sys/bus/i2c/devices/10-0043/calibration/f0_stored
+    chown system system /sys/bus/i2c/devices/10-0043/calibration/q_stored
+    chown system system /sys/bus/i2c/devices/10-0043/calibration/redc_stored
+    chown system system /sys/bus/i2c/devices/10-0043/default/vibe_state
+    chown system system /sys/bus/i2c/devices/10-0043/default/num_waves
+    chown system system /sys/bus/i2c/devices/10-0043/default/f0_offset
+    chown system system /sys/bus/i2c/devices/10-0043/default/owt_free_space
+    chown system system /sys/bus/i2c/devices/10-0043/default/owt_lib_compat
+    chown system system /sys/bus/i2c/devices/10-0043/default/f0_comp_enable
+    chown system system /sys/bus/i2c/devices/10-0043/default/redc_comp_enable
+    chown system system /sys/bus/i2c/devices/10-0043/default/delay_before_stop_playback_us
+    chown system system /sys/bus/i2c/devices/10-0043/default/braking_time_bank
+    chown system system /sys/bus/i2c/devices/10-0043/default/braking_time_index
+    chown system system /sys/bus/i2c/devices/10-0043/default/braking_time_ms
+    chown system system /sys/bus/i2c/devices/10-0043/firmware/fw_algo_id
+    chown system system /sys/bus/i2c/devices/10-0043/firmware/fw_ctrl_name
+    chown system system /sys/bus/i2c/devices/10-0043/firmware/fw_mem_block_type
+    chown system system /sys/bus/i2c/devices/10-0043/firmware/fw_ctrl_val
+
+    enable vendor.vibrator.cs40l26
+
+# Start the twoshay touch service
+on property:sys.boot_completed=1
+    chown system input /dev/touch_offload
+    chmod 660 /dev/touch_offload
+    start twoshay
+
+# Toggle high_sensitivity according to touch_sensitivity_mode
+on property:persist.vendor.touch_sensitivity_mode=0 && property:sys.boot_completed=1
+    write /sys/devices/virtual/goog_touch_interface/gti.0/screen_protector_mode_enabled 0
+
+on property:persist.vendor.touch_sensitivity_mode=1 && property:sys.boot_completed=1
+    write /sys/devices/virtual/goog_touch_interface/gti.0/screen_protector_mode_enabled 1
+
+# For Japan sku, always enforce camera shutter sound
+# Since this property is read by the audio server in system service,
+# it should be written by the system init.
+on property:ro.boot.hardware.sku=GYPW4
+    setprop audio.camerasound.force true
+
+# eSIM
+# Disable bootstrap when bootloader is unlocked in user build
+on property:ro.build.type=user && property:ro.boot.flash.locked=0
+    setprop setupwizard.feature.provisioning_profile_mode false
+# Disable bootstrap for DVT devices shipping to non-US carriers
+on property:ro.boot.warranty.sku=BOF
+    setprop setupwizard.feature.provisioning_profile_mode false

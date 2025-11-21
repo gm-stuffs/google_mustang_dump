@@ -1,0 +1,43 @@
+{
+    "hal_cfg": {
+        "auto_flash_fw": 1,
+        "force_flash_fw": 0,
+        "fw_name": "u100FwUpdate.bin",
+        "fw_path": "/vendor/firmware",
+        "fw_dl_when_enable_uwb": 1,
+        "verbose_logging_for_cal_update": 0
+    },
+    "uwbs_cfg": {
+        "cir": 0,
+        "ranging_data_info": 0,
+        "enable_per_slot_logging": 0,
+        "auto_update_nv": 1,
+        "force_update_nv": 0,
+        "update_nv_priority": ["persist","region","default"],
+        "max_region_change_per_hour": 6,
+        "enable_radar_override": 0
+    },
+    "dump_cfg": {
+        "uwbs_crash_dump_enable": 1,
+        "uwbs_dump_section": {
+            "dump_sram_cpu0": 1,
+            "dump_egram": 1,
+            "dump_opt": 1,
+            "dump_flash": 0
+        },
+        "disable_driver_hard_reset": 1
+    },
+    "ant_cfg": {
+        "enable_static_ant_tx": 0,
+        "enable_static_ant_rx": 0,
+        "static_ant_tx": "xANT1",
+        "static_ant_rx": ["xANT1", "xANT3"]
+    },
+    "radar_cfg": {
+        "rx_agc_gain": 36,
+        "tx_power_control": 40,
+        "sfd_id": 0,
+        "rx_accum": 48,
+        "data_rate": 0
+    }
+}

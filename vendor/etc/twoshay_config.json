@@ -1,0 +1,101 @@
+{
+	"pipelines": [
+		{
+			"name": "default",
+			"device": "/dev/touch_offload",
+			"algorithms": [
+				{
+					"class": "SegmentationAlgorithm",
+					"name": "segmentation"
+				},
+				{
+					"class": "TouchflowAlgorithm",
+					"name": "touchflow",
+					"blocked_by": ["segmentation"]
+				},
+				{
+					"class": "PeakTrackerAlgorithm",
+					"name": "peak_tracker",
+					"blocked_by": ["touchflow"]
+				},
+				{
+					"class": "GripSuppressionAlgorithm",
+					"name": "grip_suppression",
+					"blocked_by": ["peak_tracker"],
+					"parameters": {
+						"enableDebugLog": true
+					}
+				},
+				{
+					"class": "EarCheekDetectionAlgorithm",
+					"name": "earcheek",
+					"parameters": {
+						"prob_threshold_lo": 0.5,
+						"prob_threshold_hi": 0.8,
+						"min_frames_under_lower_th": 10,
+						"min_frames_over_upper_th": 10
+					},
+					"blocked_by": ["grip_suppression"]
+				},
+				{
+					"class": "HoverRejectionAlgorithm",
+					"name": "hover",
+                                        "parameters": {
+                                                "weak_th": 0.6,
+                                                "confident_th": 5.0,
+                                                "min_time_th": 120000000
+                                        },
+					"blocked_by": ["earcheek"]
+				},
+				{
+					"class": "AbnormalDetectionAlgorithm",
+					"name": "abnormal_detect",
+					"blocked_by": ["hover"],
+					"parameters": {
+						"enable_debug": true,
+						"min_aspect_ratio": 0.25,
+						"suppress_single_cell_blobs": false,
+						"suppress_line_blobs": false,
+						"large_blob_area": 20,
+						"min_abnormal_line_length": 4,
+						"max_stationary_blob_delta": 1.0,
+						"max_suppression_duration": 20000000,
+						"max_area_delta": 0.05
+					}
+				},
+				{
+					"class": "ReportingAlgorithm",
+					"name": "reporting",
+					"blocked_by": ["abnormal_detect"]
+				},
+				{
+					"class": "HardwareStateDetector",
+					"name": "gril_antenna_tuning",
+					"blocked_by": ["reporting"],
+					"parameters": {
+						"enableGril": true,
+						"minNumFramesCaseDetection": 20000,
+						"scalingFactorSignalStrength": 0.97,
+						"debounceDelayCaseAbsentToPresentMs": 0
+					}
+				},
+				{
+					"class": "SensorFusionAlgorithm",
+					"name": "sensorfusion",
+					"blocked_by": ["gril_antenna_tuning"],
+					"parameters": {
+						"WALLABY_AUTO_SUBSCRIBE": true
+					}
+				},
+				{
+					"class": "TouchSuezAlgorithm",
+					"name": "touchsuez",
+					"blocked_by": ["sensorfusion"],
+					"parameters": {
+						"latency_logger_threshold_ms": 4.1
+					}
+				}
+			]
+		}
+	]
+}
