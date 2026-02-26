@@ -1,0 +1,58 @@
+#
+# Mustang sensor device configuration registry script for the EVT 1.1 stage.
+#
+# Source of truth: go/pixel-sensor-list
+#
+
+#
+# CDT Filter <CDT>:<mask>
+# CDT format: <0xPPPPSJIV> (P:Product, S:Stage, J:Major, I:Minor, V:Variant)
+# go/pixel-cdt-lga
+#
+
+?+0x53000:0xFFFFF000  # EVT stage
+# Exclude
+?-0x53100:0xFFFFFFF0  # EVT 1.0
+
+#
+# Record reg_script.
+#
+
++/
+reg_script=mustang_evt_1_1.reg
+
+#
+# Sensors
+#
+
+# MAG (MC5616WA)
++/dev/mmc5616/0/mag
+  fac_cal_transform=0.9313 0.0269 -0.0814 -0.0232 1.0258 -0.0089 -0.1280 0.0473 1.2513 0 0 0
+  curr_comp_factors=11.40 -6.53 6.66
+  curr_comp_factors_fast=2.77 -1.64 1.75
+
+# ALSP (TMD3743)
++/dev/tmd3743/0/als
+  x_scale=1.02494
+  lux_scale=1.02069
+  z_scale=1.00897
+  x_crgbw_coefs=-37.408235 43.854591 129.513772 -9.300066 -2.601188
+  lux_crgbw_coefs=-27.257599 26.672212 124.899590 0.132850 -1.952329
+  z_crgbw_coefs=30.456540 -57.486146 -0.813766 132.762996 1.365894
+
++/dev/tmd3743/0/prox
+  pulse_count=2
+  pulse_len_us=63
+
+# RAINBOW (VD6282)
++/dev/vd6282/0/spectral
+  # Golden values for calibration.
+  golden_rals_r=1001.69739596466
+  golden_rals_g=1073.72161998626
+  golden_rals_b=268.673206758362
+  golden_rals_clr1=4710.17353586704
+  golden_rals_ir=3089.47720953848
+  golden_rals_clr2=4780.09375269133
+
++/dev/vd6282/0/rls
+  lux_scale=114.290481

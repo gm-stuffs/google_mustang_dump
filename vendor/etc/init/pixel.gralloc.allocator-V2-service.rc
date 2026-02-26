@@ -1,0 +1,5 @@
+service pixel.graphics.allocator-aidl /vendor/bin/hw/pixel.gralloc.allocator-V2-service
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE

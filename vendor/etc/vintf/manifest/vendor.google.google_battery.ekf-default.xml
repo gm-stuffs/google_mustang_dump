@@ -1,0 +1,5 @@
+<!--
+    Input:
+        vendor/google/interfaces/google_battery/ekf/aidl/default/vendor.google.google_battery.ekf-default.xml
+-->
+<manifest version="9.0" type="device"/>
