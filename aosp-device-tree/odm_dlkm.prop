@@ -1,0 +1,5 @@
+# Miscellaneous
+ro.odm_dlkm.build.version.sdk_full=36.1
+ro.product.device_for_attestation=mustang
+ro.product.manufacturer_for_attestation=Google
+
