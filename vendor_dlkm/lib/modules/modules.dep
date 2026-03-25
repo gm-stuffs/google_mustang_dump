@@ -1,0 +1,188 @@
+/vendor/lib/modules/google_gem.ko:
+/vendor/lib/modules/google_cap_sysfs.ko:
+/vendor/lib/modules/ln8282_regulator.ko:
+/vendor/lib/modules/irq-extended-sysfs.ko:
+/system/lib/modules/nhc_ipv6.ko: /system/lib/modules/6lowpan.ko
+/system/lib/modules/ppp_deflate.ko: /system/lib/modules/ppp_generic.ko /system/lib/modules/slhc.ko
+/vendor/lib/modules/cs40l26-core.ko: /vendor/lib/modules/cl_dsp-core.ko
+/vendor/lib/modules/lwis.ko: /vendor/lib/modules/slc_pt.ko
+/vendor/lib/modules/google_thermal_uclamp.ko:
+/system/lib/modules/nhc_udp.ko: /system/lib/modules/6lowpan.ko
+/system/lib/modules/pps_core.ko:
+/vendor/lib/modules/cma_heap.ko:
+/system/lib/modules/usbserial.ko:
+/vendor/lib/modules/google-ra.ko:
+/vendor/lib/modules/google_powerdashboard.ko:
+/system/lib/modules/nhc_hop.ko: /system/lib/modules/6lowpan.ko
+/vendor/lib/modules/coresight.ko:
+/system/lib/modules/slhc.ko:
+/system/lib/modules/virtio_pci_legacy_dev.ko:
+/vendor/lib/modules/max77779-charger-i2c.ko:
+/system/lib/modules/open-dice.ko:
+/system/lib/modules/ftdi_sio.ko: /system/lib/modules/usbserial.ko
+/vendor/lib/modules/sscoredump_sample_test.ko:
+/system/lib/modules/cdc_ncm.ko: /system/lib/modules/cdc_ether.ko /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/system/lib/modules/ppp_generic.ko: /system/lib/modules/slhc.ko
+/vendor/lib/modules/drm_g2d.ko:
+/vendor/lib/modules/fwtp_google_gdmc.ko:
+/vendor/lib/modules/mailbox-wc.ko:
+/system/lib/modules/can-bcm.ko: /system/lib/modules/can.ko
+/vendor/lib/modules/cs40l26-i2c.ko: /vendor/lib/modules/cs40l26-core.ko /vendor/lib/modules/cl_dsp-core.ko
+/vendor/lib/modules/goog-cpu-idle-info.ko:
+/vendor/lib/modules/google_gdmc_dhub.ko:
+/vendor/lib/modules/gs-panel-common-test.ko:
+/vendor/lib/modules/google_cpu_lpm_stats.ko: /vendor/lib/modules/google_cap_sysfs.ko
+/vendor/lib/modules/pvrsrvkm.ko: /vendor/lib/modules/iif.ko /vendor/lib/modules/slc_pt.ko
+/system/lib/modules/hidp.ko: /system/lib/modules/bluetooth.ko /system/lib/modules/rfkill.ko
+/vendor/lib/modules/google-irm-stub.ko:
+/system/lib/modules/rtl8150.ko:
+/system/lib/modules/l2tp_core.ko:
+/vendor/lib/modules/softdog.ko:
+/vendor/lib/modules/bcmdhd4383.ko: /vendor/lib/modules/google-pcie.ko /vendor/lib/modules/cfg80211.ko /system/lib/modules/rfkill.ko
+/vendor/lib/modules/iif.ko:
+/vendor/lib/modules/google_gem_test.ko: /vendor/lib/modules/google_gem.ko
+/vendor/lib/modules/cpif_page.ko:
+/vendor/lib/modules/google-mem-qos-mock-client.ko:
+/vendor/lib/modules/google-pcie.ko:
+/system/lib/modules/r8152.ko: /system/lib/modules/mii.ko
+/vendor/lib/modules/coresight-tmc.ko: /vendor/lib/modules/coresight.ko
+/system/lib/modules/nhc_routing.ko: /system/lib/modules/6lowpan.ko
+/vendor/lib/modules/max77779-fg-i2c.ko:
+/system/lib/modules/bluetooth.ko: /system/lib/modules/rfkill.ko
+/vendor/lib/modules/generic_source.ko: /vendor/lib/modules/coresight.ko
+/vendor/lib/modules/cp_thermal_zone.ko:
+/vendor/lib/modules/trusty-test.ko:
+/system/lib/modules/nhc_mobility.ko: /system/lib/modules/6lowpan.ko
+/vendor/lib/modules/pinctrl-slg51002.ko:
+/system/lib/modules/asix.ko: /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/system/lib/modules/virtio_blk.ko:
+/vendor/lib/modules/h2omg.ko:
+/system/lib/modules/can-dev.ko:
+/system/lib/modules/rfkill.ko:
+/system/lib/modules/ptp.ko: /system/lib/modules/pps_core.ko
+/system/lib/modules/8021q.ko:
+/vendor/lib/modules/lpm_pm_domains.ko:
+/vendor/lib/modules/cl_dsp-core.ko:
+/system/lib/modules/ppp_mppe.ko: /system/lib/modules/libarc4.ko /system/lib/modules/ppp_generic.ko /system/lib/modules/slhc.ko
+/vendor/lib/modules/nitrous.ko: /system/lib/modules/rfkill.ko
+/vendor/lib/modules/coresight-replicator.ko: /vendor/lib/modules/coresight.ko
+/vendor/lib/modules/google_thermal_cpm_mbox.ko:
+/system/lib/modules/cctrng.ko:
+/vendor/lib/modules/google_ccd.ko:
+/vendor/lib/modules/coresight-catu.ko: /vendor/lib/modules/coresight-tmc.ko /vendor/lib/modules/coresight.ko
+/vendor/lib/modules/google_dta.ko:
+/vendor/lib/modules/netfs.ko:
+/vendor/lib/modules/slc_dummy.ko: /vendor/lib/modules/slc_pt.ko
+/vendor/lib/modules/max77779-fwupdate.ko:
+/system/lib/modules/tls.ko:
+/vendor/lib/modules/max77779_pmic_i2c.ko:
+/vendor/lib/modules/max77779-sp-i2c.ko:
+/system/lib/modules/nhc_fragment.ko: /system/lib/modules/6lowpan.ko
+/vendor/lib/modules/google-pmu-ehld.ko: /vendor/lib/modules/hardlockup-watchdog.ko
+/system/lib/modules/6lowpan.ko:
+/system/lib/modules/cdc_eem.ko: /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/vendor/lib/modules/bcmdhd4390.ko: /vendor/lib/modules/google-pcie.ko /vendor/lib/modules/cfg80211.ko /system/lib/modules/rfkill.ko
+/vendor/lib/modules/rt9471_charger.ko:
+/vendor/lib/modules/stm_core.ko:
+/system/lib/modules/9pnet_fd.ko: /system/lib/modules/9pnet.ko
+/vendor/lib/modules/google-icc-helper-mock-client.ko:
+/vendor/lib/modules/st21nfc.ko:
+/system/lib/modules/virtio_console.ko:
+/vendor/lib/modules/slc_pt.ko:
+/system/lib/modules/mac802154.ko: /system/lib/modules/ieee802154.ko
+/system/lib/modules/cdc_ether.ko: /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/system/lib/modules/usbnet.ko: /system/lib/modules/mii.ko
+/system/lib/modules/libarc4.ko:
+/vendor/lib/modules/cp_pmic.ko:
+/vendor/lib/modules/usb_f_dm1.ko:
+/system/lib/modules/vmw_vsock_virtio_transport.ko:
+/vendor/lib/modules/spmi_bit_bang.ko:
+/system/lib/modules/r8153_ecm.ko: /system/lib/modules/r8152.ko /system/lib/modules/cdc_ether.ko /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/system/lib/modules/nhc_dest.ko: /system/lib/modules/6lowpan.ko
+/system/lib/modules/btqca.ko: /system/lib/modules/bluetooth.ko /system/lib/modules/rfkill.ko
+/vendor/lib/modules/p9221.ko:
+/vendor/lib/modules/google_thermal_sensor_stats.ko: /vendor/lib/modules/google_thermal_cpm_mbox.ko
+/system/lib/modules/ieee802154_socket.ko: /system/lib/modules/ieee802154.ko
+/system/lib/modules/hci_uart.ko: /system/lib/modules/btqca.ko /system/lib/modules/btbcm.ko /system/lib/modules/bluetooth.ko /system/lib/modules/rfkill.ko
+/vendor/lib/modules/cpif.ko: /vendor/lib/modules/cp_pmic.ko /vendor/lib/modules/s5910.ko /vendor/lib/modules/shm_ipc.ko /vendor/lib/modules/google-pcie.ko
+/system/lib/modules/aqc111.ko: /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/system/lib/modules/kheaders.ko:
+/system/lib/modules/usbmon.ko:
+/vendor/lib/modules/gxp.ko: /vendor/lib/modules/buenos.ko /vendor/lib/modules/iif.ko
+/vendor/lib/modules/irq-gia-google-test.ko:
+/system/lib/modules/pptp.ko: /system/lib/modules/pppox.ko /system/lib/modules/ppp_generic.ko /system/lib/modules/slhc.ko
+/system/lib/modules/tipc.ko:
+/system/lib/modules/ieee802154.ko:
+/vendor/lib/modules/perf_trace_counters.ko:
+/system/lib/modules/zsmalloc.ko:
+/system/lib/modules/can.ko:
+/system/lib/modules/virtio_pci.ko: /system/lib/modules/virtio_pci_legacy_dev.ko /system/lib/modules/virtio_pci_modern_dev.ko
+/vendor/lib/modules/gpu_pf_state.ko:
+/vendor/lib/modules/cfg80211.ko: /system/lib/modules/rfkill.ko
+/vendor/lib/modules/focal_touch.ko:
+/vendor/lib/modules/coresight-trbe.ko: /vendor/lib/modules/coresight.ko
+/vendor/lib/modules/vpu.ko: /vendor/lib/modules/google-ra.ko /vendor/lib/modules/slc_pt.ko
+/system/lib/modules/macsec.ko:
+/vendor/lib/modules/google_thermal_sensor.ko: /vendor/lib/modules/google_thermal_cpm_mbox.ko
+/vendor/lib/modules/panel-gs-s6e3hc4.ko:
+/vendor/lib/modules/syna_touch.ko:
+/vendor/lib/modules/google_thermal_pressure_tj.ko: /vendor/lib/modules/google_thermal_cpm_mbox.ko
+/vendor/lib/modules/max77729_uic.ko:
+/vendor/lib/modules/u100.ko:
+/vendor/lib/modules/coresight-stm.ko: /vendor/lib/modules/stm_core.ko /vendor/lib/modules/coresight.ko
+/system/lib/modules/btbcm.ko: /system/lib/modules/bluetooth.ko /system/lib/modules/rfkill.ko
+/vendor/lib/modules/max77779_i2cm_i2c.ko:
+/system/lib/modules/rfcomm.ko: /system/lib/modules/bluetooth.ko /system/lib/modules/rfkill.ko
+/system/lib/modules/gzvm.ko:
+/system/lib/modules/ieee802154_6lowpan.ko: /system/lib/modules/ieee802154.ko /system/lib/modules/6lowpan.ko
+/vendor/lib/modules/shm_ipc.ko:
+/vendor/lib/modules/gnssif.ko: /vendor/lib/modules/gnss_spi.ko
+/system/lib/modules/wwan.ko:
+/system/lib/modules/l2tp_ppp.ko: /system/lib/modules/l2tp_core.ko /system/lib/modules/pppox.ko /system/lib/modules/ppp_generic.ko /system/lib/modules/slhc.ko
+/vendor/lib/modules/coresight-etm4x.ko: /vendor/lib/modules/coresight.ko
+/vendor/lib/modules/s5910.ko:
+/system/lib/modules/cdc-acm.ko:
+/vendor/lib/modules/google-ehld-coreinstr.ko: /vendor/lib/modules/hardlockup-watchdog.ko
+/system/lib/modules/ax88179_178a.ko: /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/vendor/lib/modules/coresight-funnel.ko: /vendor/lib/modules/coresight.ko
+/vendor/lib/modules/vh_thermal.ko:
+/vendor/lib/modules/max77779-vimon-i2c.ko:
+/system/lib/modules/9pnet.ko:
+/vendor/lib/modules/slg51002-core.ko:
+/system/lib/modules/vcan.ko: /system/lib/modules/can-dev.ko
+/system/lib/modules/bsd_comp.ko: /system/lib/modules/ppp_generic.ko /system/lib/modules/slhc.ko
+/vendor/lib/modules/gslc.ko: /vendor/lib/modules/slc_pt.ko
+/vendor/lib/modules/max20339.ko:
+/vendor/lib/modules/google-cpm-tracepoint.ko:
+/vendor/lib/modules/google_devfreq_tj_cdev.ko: /vendor/lib/modules/google_thermal_cpm_mbox.ko
+/vendor/lib/modules/fscache.ko:
+/vendor/lib/modules/google_dock.ko:
+/vendor/lib/modules/spi-loopback-test.ko:
+/system/lib/modules/can-raw.ko: /system/lib/modules/can.ko
+/vendor/lib/modules/snd-soc-cs40l26.ko: /vendor/lib/modules/cs40l26-core.ko /vendor/lib/modules/cl_dsp-core.ko
+/vendor/lib/modules/max77729_charger.ko:
+/vendor/lib/modules/ebu-google.ko:
+/system/lib/modules/pppox.ko: /system/lib/modules/ppp_generic.ko /system/lib/modules/slhc.ko
+/vendor/lib/modules/sscoredump_test.ko:
+/vendor/lib/modules/hl7132.ko:
+/vendor/lib/modules/pixel-boot-metrics.ko:
+/vendor/lib/modules/gnss_spi.ko:
+/vendor/lib/modules/google_powercap.ko: /vendor/lib/modules/google_thermal_cpm_mbox.ko
+/system/lib/modules/can-gw.ko: /system/lib/modules/can.ko
+/system/lib/modules/vcpu_stall_detector.ko:
+/system/lib/modules/btsdio.ko: /system/lib/modules/bluetooth.ko /system/lib/modules/rfkill.ko
+/system/lib/modules/diag.ko: /system/lib/modules/tipc.ko
+/system/lib/modules/virtio_balloon.ko:
+/system/lib/modules/virtio_pci_modern_dev.ko:
+/system/lib/modules/nfc.ko: /system/lib/modules/rfkill.ko
+/vendor/lib/modules/st33spi.ko:
+/system/lib/modules/slcan.ko: /system/lib/modules/can-dev.ko
+/system/lib/modules/mii.ko:
+/vendor/lib/modules/i2c-dev.ko:
+/vendor/lib/modules/manual_lpcm.ko:
+/vendor/lib/modules/slg51002-regulator.ko:
+/vendor/lib/modules/hardlockup-watchdog.ko:
+/vendor/lib/modules/buenos.ko: /vendor/lib/modules/iif.ko
+/system/lib/modules/ptp_kvm.ko: /system/lib/modules/ptp.ko /system/lib/modules/pps_core.ko
+/vendor/lib/modules/aoc_unit_test_dev.ko:
+/vendor/lib/modules/mac80211.ko: /system/lib/modules/libarc4.ko /vendor/lib/modules/cfg80211.ko /system/lib/modules/rfkill.ko

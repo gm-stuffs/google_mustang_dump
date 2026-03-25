@@ -1,0 +1,9 @@
+product/app/Photos/Photos.apk.zst
+product/app/PrebuiltGmail/PrebuiltGmail.apk.zst
+product/app/Maps/Maps.apk.zst
+product/app/YouTube/YouTube.apk.zst
+product/priv-app/PrebuiltGmsCoreVic/PrebuiltGmsCoreVic.apk.zst
+product/priv-app/PrebuiltBugle/PrebuiltBugle.apk.zst
+product/priv-app/PixelCameraServicesConnectivityClient/PixelCameraServicesConnectivityClient.apk.zst
+product/priv-app/DevicePersonalizationPrebuiltPixel2025-playstore_aiai_20250306.00_RC10/DevicePersonalizationPrebuiltPixel2025-playstore_aiai_20250306.00_RC10.apk.zst
+vendor/apex/com.google.pixel.camera.hal.apex.zst

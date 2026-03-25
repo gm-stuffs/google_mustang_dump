@@ -1,0 +1,14 @@
+# generic_system_google-user 16 BP4A.260205.001 14624666 release-keys
+- manufacturer: google
+- platform: laguna
+- codename: mustang
+- flavor: generic_system_google-user
+- release: 16
+- id: BP4A.260205.001
+- incremental: 14624666
+- tags: release-keys
+- fingerprint: google/mustang/mustang:16/BP4A.260205.001/14624666:user/release-keys
+- is_ab: true
+- brand: google
+- branch: generic_system_google-user-16-BP4A.260205.001-14624666-release-keys
+- repo: google_mustang_dump

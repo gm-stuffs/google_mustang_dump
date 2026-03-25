@@ -1,0 +1,203 @@
+/lib/modules/max77779-charger-spmi.ko: /lib/modules/regmap-goog-spmi.ko /lib/modules/max77779-charger.ko /lib/modules/max77779_pmic.ko /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/trusty-virtio.ko: /lib/modules/trusty-core.ko
+/lib/modules/ln8411.ko: /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/smra.ko: /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko
+/lib/modules/da9188-core.ko: /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/gcma.ko: /lib/modules/vh_mm.ko
+/lib/modules/snd-soc-cs35l43.ko: /lib/modules/snd-soc-wm-adsp.ko /lib/modules/fw_cs_dsp.ko
+/lib/modules/google-usb-phy.ko:
+/lib/modules/google_ccf_devfreq.ko: /lib/modules/google_vote_manager.ko /lib/modules/google_pm_qos.ko /lib/modules/dvfs_helper.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/regmap-goog-spmi.ko:
+/lib/modules/max77779_pmic.ko:
+/lib/modules/aoc_tbn_service_dev.ko: /lib/modules/aoc_core.ko /lib/modules/pinctrl.ko /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko /lib/modules/samsung_dma_heap.ko /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko
+/lib/modules/aoc_uwb_platform_drv.ko: /lib/modules/aoc_uwb_service_dev.ko /lib/modules/aoc_core.ko /lib/modules/pinctrl.ko /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko /lib/modules/samsung_dma_heap.ko /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko
+/lib/modules/pixel_em.ko: /lib/modules/vh_sched.ko /lib/modules/gs_domain_idle.ko /lib/modules/sched_tp.ko /lib/modules/gs_perf_mon.ko
+/lib/modules/pixel-debug-test.ko:
+/lib/modules/spi-dw.ko:
+/lib/modules/snd-soc-cs35l43-spi.ko: /lib/modules/snd-soc-cs35l43.ko /lib/modules/snd-soc-wm-adsp.ko /lib/modules/fw_cs_dsp.ko
+/lib/modules/aoc_alsa_dev.ko: /lib/modules/aoc_alsa_dev_util.ko /lib/modules/xhci-sideband.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko /lib/modules/google_modemctl.ko /lib/modules/audiometrics.ko /lib/modules/aoc_core.ko /lib/modules/pinctrl.ko /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko /lib/modules/samsung_dma_heap.ko /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko
+/lib/modules/google_8250_base.ko: /lib/modules/logbuffer.ko
+/lib/modules/touch_bus_negotiator.ko: /lib/modules/aoc_tbn_service_dev.ko /lib/modules/aoc_core.ko /lib/modules/pinctrl.ko /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko /lib/modules/samsung_dma_heap.ko /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko
+/lib/modules/gs_governor_utils.ko:
+/lib/modules/mbfs_cpm_backend.ko: /lib/modules/mbfs.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/hardlockup-debug.ko: /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/max77779-fg-spmi.ko: /lib/modules/max77779-fg.ko /lib/modules/regmap-goog-spmi.ko /lib/modules/max77779-charger.ko /lib/modules/max77779_pmic.ko /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/usbc_cooling_dev.ko: /lib/modules/gvotable.ko
+/lib/modules/gvotable.ko:
+/lib/modules/max77779-vimon.ko: /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/aoc_usb_driver.ko: /lib/modules/xhci-goog-dma.ko /lib/modules/aoc_alsa_dev_util.ko /lib/modules/xhci-sideband.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko /lib/modules/google_modemctl.ko /lib/modules/audiometrics.ko /lib/modules/aoc_core.ko /lib/modules/pinctrl.ko /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko /lib/modules/samsung_dma_heap.ko /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko /lib/modules/gvotable.ko
+/lib/modules/mipi-cdphy.ko: /lib/modules/gs-drm-connector.ko
+/lib/modules/google_ip_idle_notifier.ko: /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/max1720x-battery.ko: /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/google_modemctl.ko:
+/lib/modules/google-charger.ko: /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/max77779-sp-spmi.ko: /lib/modules/max77779-sp.ko /lib/modules/regmap-goog-spmi.ko /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/google-bms.ko: /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/google_sst.ko:
+/lib/modules/panel-gs-cm4.ko: /lib/modules/gs-panel.ko /lib/modules/drm_display_helper.ko /lib/modules/gs-drm-connector.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/fw_cs_dsp.ko:
+/lib/modules/pa_kill.ko: /lib/modules/systrace.ko /lib/modules/vh_mm.ko
+/lib/modules/vh_preemptirq_long.ko:
+/lib/modules/google_timestamp_sync.ko: /lib/modules/google_gtc.ko
+/lib/modules/max77779_pmic_irq.ko: /lib/modules/max77779_pmic.ko
+/lib/modules/max77759_helper.ko:
+/lib/modules/pixel-debug-kinfo.ko: /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/panel-gs-tk4b.ko: /lib/modules/gs-panel.ko /lib/modules/drm_display_helper.ko /lib/modules/gs-drm-connector.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/google-wlc.ko: /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/max77779_i2cm.ko:
+/lib/modules/panel-gs-bmea.ko: /lib/modules/gs-panel.ko /lib/modules/drm_display_helper.ko /lib/modules/gs-drm-connector.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/google_8250.ko: /lib/modules/google_8250_base.ko /lib/modules/logbuffer.ko
+/lib/modules/irq-gia-google.ko: /lib/modules/irq-gia-lib.ko
+/lib/modules/vs_drm.ko: /lib/modules/mipi-dsi2h.ko /lib/modules/tzprot.ko /lib/modules/google_icc.ko /lib/modules/drm_display_helper.ko /lib/modules/gs-drm-connector.ko /lib/modules/google_gtc.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/google_pm_qos.ko /lib/modules/trusty-core.ko
+/lib/modules/goog-mba-cpm-iface-test.ko: /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/pca9468.ko: /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/fwtp_cpm_module.ko: /lib/modules/fwtp_lib.ko /lib/modules/google_timestamp_sync.ko /lib/modules/google_gtc.ko /lib/modules/dvfs_helper.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/dvfs_helper.ko: /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/bc_max77759.ko: /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/metrics_collection.ko:
+/lib/modules/google_icc.ko: /lib/modules/google_gtc.ko
+/lib/modules/aoc_uwb_service_dev.ko: /lib/modules/aoc_core.ko /lib/modules/pinctrl.ko /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko /lib/modules/samsung_dma_heap.ko /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko
+/lib/modules/aoc_channel_dev.ko: /lib/modules/aoc_core.ko /lib/modules/pinctrl.ko /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko /lib/modules/samsung_dma_heap.ko /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko
+/lib/modules/max777x9_contaminant.ko: /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/max77759_helper.ko /lib/modules/logbuffer.ko
+/lib/modules/panel-gs-flea.ko: /lib/modules/gs-panel.ko /lib/modules/drm_display_helper.ko /lib/modules/gs-drm-connector.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/vh_fs.ko:
+/lib/modules/aoc_alsa_dev_util.ko: /lib/modules/xhci-sideband.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko /lib/modules/google_modemctl.ko /lib/modules/audiometrics.ko /lib/modules/aoc_core.ko /lib/modules/pinctrl.ko /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko /lib/modules/samsung_dma_heap.ko /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko
+/lib/modules/samsung_dma_heap.ko: /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko
+/lib/modules/google_irm_devfreq.ko: /lib/modules/google_irm.ko /lib/modules/google_gtc.ko /lib/modules/google_vote_manager.ko /lib/modules/google_pm_qos.ko /lib/modules/dvfs_helper.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/snd-soc-cs35l43-i2c.ko: /lib/modules/snd-soc-cs35l43.ko /lib/modules/snd-soc-wm-adsp.ko /lib/modules/fw_cs_dsp.ko
+/lib/modules/max77759-charger.ko: /lib/modules/max77729-pmic.ko /lib/modules/max1720x-battery.ko /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/gsa_gsc.ko: /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/trusty-core.ko
+/lib/modules/heatmap.ko:
+/lib/modules/max77779_pmic_spmi.ko: /lib/modules/regmap-goog-spmi.ko /lib/modules/max77779_pmic.ko
+/lib/modules/pixel-reboot.ko: /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/google_cpufreq.ko: /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko /lib/modules/google_vote_manager.ko /lib/modules/google_pm_qos.ko /lib/modules/dvfs_helper.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/qbt_handler.ko: /lib/modules/goog_touch_interface.ko /lib/modules/touch_bus_negotiator.ko /lib/modules/aoc_tbn_service_dev.ko /lib/modules/touch_offload.ko /lib/modules/heatmap.ko /lib/modules/systrace.ko /lib/modules/gs-drm-connector.ko /lib/modules/aoc_core.ko /lib/modules/pinctrl.ko /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko /lib/modules/samsung_dma_heap.ko /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko
+/lib/modules/google_8250_dw.ko: /lib/modules/google_8250.ko /lib/modules/google_8250_base.ko /lib/modules/logbuffer.ko
+/lib/modules/io-pgtable-pixel.ko:
+/lib/modules/google-gpdma.ko:
+/lib/modules/aoc_control_dev.ko: /lib/modules/aoc_core.ko /lib/modules/pinctrl.ko /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko /lib/modules/samsung_dma_heap.ko /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko
+/lib/modules/max77729-pmic.ko: /lib/modules/max1720x-battery.ko /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/goog-mba-gdmc-iface-test.ko: /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko
+/lib/modules/ufs.ko: /lib/modules/google_ip_idle_notifier.ko /lib/modules/da9188-core.ko /lib/modules/sbb-mux.ko /lib/modules/systrace.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/goog-mba-cpm-iface.ko /lib/modules/trusty-core.ko
+/lib/modules/tzprot.ko: /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/trusty-core.ko
+/lib/modules/goog-chip-info.ko:
+/lib/modules/dwc_dptx.ko: /lib/modules/google-usb-phy.ko /lib/modules/drm_display_helper.ko /lib/modules/trusty-ipc.ko /lib/modules/trusty-core.ko
+/lib/modules/gs-panel.ko: /lib/modules/drm_display_helper.ko /lib/modules/gs-drm-connector.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/google_irm.ko: /lib/modules/google_gtc.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/goog-mba-aggr.ko:
+/lib/modules/fips140.ko:
+/lib/modules/google_odpm.ko: /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/vh_sched.ko: /lib/modules/gs_domain_idle.ko /lib/modules/sched_tp.ko /lib/modules/gs_perf_mon.ko
+/lib/modules/power_controller.ko: /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/tcpci_max77759.ko: /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/da9188-rtc.ko: /lib/modules/da9188-core.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/pf_state_cpm.ko: /lib/modules/dvfs_helper.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/max77779_pmic_sgpio.ko: /lib/modules/max77779_pmic.ko
+/lib/modules/pixel_trim.ko: /lib/modules/vh_mm.ko
+/lib/modules/sched_tp.ko:
+/lib/modules/trusty-log.ko: /lib/modules/trusty-core.ko
+/lib/modules/max77779-fg.ko: /lib/modules/max77779-charger.ko /lib/modules/max77779_pmic.ko /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/gsa.ko: /lib/modules/trusty-ipc.ko /lib/modules/trusty-core.ko
+/lib/modules/fwtp_lib.ko:
+/lib/modules/max77779-sp.ko: /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/gcdd.ko: /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/i2c-designware-platform.ko: /lib/modules/i2c-designware-core.ko
+/lib/modules/gs_governor_memlat.ko: /lib/modules/gs_governor_utils.ko /lib/modules/gs_perf_mon.ko /lib/modules/google_pm_qos.ko
+/lib/modules/logbuffer.ko:
+/lib/modules/google_devfreq.ko: /lib/modules/google_vote_manager.ko /lib/modules/google_pm_qos.ko /lib/modules/dvfs_helper.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/keycombo.ko:
+/lib/modules/google_gtc.ko:
+/lib/modules/sg.ko:
+/lib/modules/panel-gs-km4.ko: /lib/modules/gs-panel.ko /lib/modules/drm_display_helper.ko /lib/modules/gs-drm-connector.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/usb_psy.ko: /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/zcomp_eh.ko: /lib/modules/zram_gs.ko /lib/modules/zsmalloc.ko /lib/modules/eh.ko /lib/modules/google_ip_idle_notifier.ko /lib/modules/mbfs.ko /lib/modules/goog-mba-cpm-iface.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko
+/lib/modules/panel-gs-tg4c.ko: /lib/modules/gs-panel.ko /lib/modules/drm_display_helper.ko /lib/modules/gs-drm-connector.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/dw-i3c-master.ko:
+/lib/modules/google_dual_batt_gauge.ko: /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/mbfs.ko:
+/lib/modules/max77779-vimon-spmi.ko: /lib/modules/max77779-vimon.ko /lib/modules/regmap-goog-spmi.ko /lib/modules/max77779-charger.ko /lib/modules/max77779_pmic.ko /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/trusty-ipc.ko: /lib/modules/trusty-core.ko
+/lib/modules/pixel_metrics.ko: /lib/modules/systrace.ko /lib/modules/vh_sched.ko /lib/modules/gs_domain_idle.ko /lib/modules/sched_tp.ko /lib/modules/gs_perf_mon.ko
+/lib/modules/i2c-designware-core.ko:
+/lib/modules/arm_smmu_v3.ko: /lib/modules/io-pgtable-pixel.ko
+/lib/modules/keydebug.ko: /lib/modules/kernel-top.ko
+/lib/modules/gs-debug-test.ko: /lib/modules/pixel-debug-test.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/kernel-top.ko:
+/lib/modules/da9188-vgpio.ko: /lib/modules/da9188-core.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/google-eusb2-repeater.ko:
+/lib/modules/systrace.ko:
+/lib/modules/clk-cpm.ko: /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/touch_offload.ko:
+/lib/modules/sbb-mux.ko: /lib/modules/systrace.ko
+/lib/modules/zsmalloc.ko:
+/lib/modules/cstate_ctrl.ko:
+/lib/modules/pixel_stat_mm.ko: /lib/modules/pixel_stat_sysfs.ko
+/lib/modules/aoc_char_dev.ko: /lib/modules/aoc_core.ko /lib/modules/pinctrl.ko /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko /lib/modules/samsung_dma_heap.ko /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko
+/lib/modules/pinctrl.ko:
+/lib/modules/zram_gs.ko: /lib/modules/zsmalloc.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko
+/lib/modules/goog-mba-gdmc-iface.ko: /lib/modules/goog-mba-aggr.ko
+/lib/modules/usb_f_dm.ko:
+/lib/modules/google_cpmlog.ko: /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/gs_domain_idle.ko:
+/lib/modules/debug-reboot.ko:
+/lib/modules/spmi-smartdv.ko:
+/lib/modules/st54spi.ko:
+/lib/modules/tcpci_max777x9_spmi.ko: /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/google_bcl.ko: /lib/modules/google_odpm.ko /lib/modules/max77759-charger.ko /lib/modules/max77729-pmic.ko /lib/modules/max1720x-battery.ko /lib/modules/max77779-vimon.ko /lib/modules/da9188-core.ko /lib/modules/max77779-fg.ko /lib/modules/google_modemctl.ko /lib/modules/google_pm_qos.ko /lib/modules/goog-mba-cpm-iface.ko /lib/modules/max77779-charger.ko /lib/modules/max77779_pmic.ko /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/at24.ko:
+/lib/modules/google_wdt.ko: /lib/modules/google_gtc.ko
+/lib/modules/sscoredump.ko:
+/lib/modules/audiometrics.ko:
+/lib/modules/mipi-dsi2h.ko: /lib/modules/gs-drm-connector.ko
+/lib/modules/nvmem-rmem.ko:
+/lib/modules/vh_mm.ko:
+/lib/modules/pl330.ko: /lib/modules/google_ip_idle_notifier.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/xhci-sideband.ko:
+/lib/modules/xhci-goog-dma.ko:
+/lib/modules/dwc3-google.ko: /lib/modules/google_icc.ko /lib/modules/xhci-goog-dma.ko /lib/modules/google_gtc.ko
+/lib/modules/google_vote_manager.ko: /lib/modules/google_pm_qos.ko
+/lib/modules/goog-mba-ctrl.ko:
+/lib/modules/gvdu.ko: /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko
+/lib/modules/google_tcpci_shim.ko:
+/lib/modules/google-role-sw.ko: /lib/modules/gvotable.ko
+/lib/modules/irq-gia-lib.ko:
+/lib/modules/irq-google-cpm.ko: /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/google-battery.ko: /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/spi-dw-mmio.ko: /lib/modules/spi-dw.ko
+/lib/modules/google-mem-qos.ko:
+/lib/modules/aoc_core.ko: /lib/modules/pinctrl.ko /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko /lib/modules/samsung_dma_heap.ko /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko
+/lib/modules/da9188-gpio.ko: /lib/modules/da9188-core.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/arm_smmu_v3_kvm.ko: /lib/modules/io-pgtable-pixel.ko
+/lib/modules/panel-gs-simple.ko: /lib/modules/gs-panel.ko /lib/modules/drm_display_helper.ko /lib/modules/gs-drm-connector.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/panel-gs-tk4c.ko: /lib/modules/gs-panel.ko /lib/modules/drm_display_helper.ko /lib/modules/gs-drm-connector.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/rt6160-regulator.ko:
+/lib/modules/arm_dsu_pmu.ko:
+/lib/modules/panel-gs-fleb.ko: /lib/modules/gs-panel.ko /lib/modules/drm_display_helper.ko /lib/modules/gs-drm-connector.ko /lib/modules/gcdd.ko /lib/modules/google_wdt.ko /lib/modules/google_gtc.ko
+/lib/modules/zcomp_cpu.ko: /lib/modules/zram_gs.ko /lib/modules/zsmalloc.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko
+/lib/modules/bookerci.ko:
+/lib/modules/pixel_stat_sysfs.ko:
+/lib/modules/acfw-debug.ko:
+/lib/modules/s2dos07x02-regulator.ko:
+/lib/modules/trusty-core.ko:
+/lib/modules/snd-soc-wm-adsp.ko: /lib/modules/fw_cs_dsp.ko
+/lib/modules/google-cpm.ko: /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/gs-drm-connector.ko:
+/lib/modules/google_pm_qos.ko:
+/lib/modules/max77779_i2cm_spmi.ko: /lib/modules/max77779_i2cm.ko /lib/modules/regmap-goog-spmi.ko /lib/modules/max77779-charger.ko /lib/modules/max77779_pmic.ko /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/da9188-regulator.ko: /lib/modules/da9188-core.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/max77779-charger.ko: /lib/modules/max77779_pmic.ko /lib/modules/google-bms.ko /lib/modules/tcpci_max77759.ko /lib/modules/google_tcpci_shim.ko /lib/modules/max777x9_contaminant.ko /lib/modules/max77759_contaminant.ko /lib/modules/max77779_contaminant.ko /lib/modules/bc_max77759.ko /lib/modules/usb_psy.ko /lib/modules/max77759_helper.ko /lib/modules/gvotable.ko /lib/modules/logbuffer.ko
+/lib/modules/max77779_contaminant.ko: /lib/modules/max77759_helper.ko /lib/modules/logbuffer.ko
+/lib/modules/arm-cmn.ko:
+/lib/modules/gs_governor_dsulat.ko: /lib/modules/gs_governor_utils.ko /lib/modules/gs_perf_mon.ko /lib/modules/google_pm_qos.ko
+/lib/modules/gs_perf_mon.ko:
+/lib/modules/goog-mba-cpm-iface.ko:
+/lib/modules/vh_cgroup.ko:
+/lib/modules/goog_touch_interface.ko: /lib/modules/touch_bus_negotiator.ko /lib/modules/aoc_tbn_service_dev.ko /lib/modules/touch_offload.ko /lib/modules/heatmap.ko /lib/modules/systrace.ko /lib/modules/gs-drm-connector.ko /lib/modules/aoc_core.ko /lib/modules/pinctrl.ko /lib/modules/goog-mba-gdmc-iface.ko /lib/modules/goog-mba-aggr.ko /lib/modules/samsung_dma_heap.ko /lib/modules/samsung-secure-iova.ko /lib/modules/gcma.ko /lib/modules/gsa.ko /lib/modules/trusty-ipc.ko /lib/modules/vh_mm.ko /lib/modules/pixel_stat_mm.ko /lib/modules/pixel_stat_sysfs.ko /lib/modules/trusty-core.ko
+/lib/modules/tps628600-regulator.ko:
+/lib/modules/max77759_contaminant.ko: /lib/modules/max77759_helper.ko /lib/modules/logbuffer.ko
+/lib/modules/samsung-secure-iova.ko:
+/lib/modules/drm_display_helper.ko:
+/lib/modules/max77779_pmic_pinctrl.ko: /lib/modules/max77779_pmic.ko
+/lib/modules/eh.ko: /lib/modules/google_ip_idle_notifier.ko /lib/modules/mbfs.ko /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/rst-cpm.ko: /lib/modules/goog-mba-cpm-iface.ko
+/lib/modules/google_dsufreq.ko: /lib/modules/google_vote_manager.ko /lib/modules/google_pm_qos.ko /lib/modules/dvfs_helper.ko /lib/modules/goog-mba-cpm-iface.ko
