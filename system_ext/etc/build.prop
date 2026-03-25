@@ -1,0 +1,36 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.system_ext.brand=google
+ro.product.system_ext.device=mustang
+ro.product.system_ext.manufacturer=Google
+ro.product.system_ext.model=Pixel 10 Pro XL
+ro.product.system_ext.name=mustang
+ro.product.model_for_attestation=Pixel 10 Pro XL
+ro.product.brand_for_attestation=google
+ro.product.name_for_attestation=mustang
+ro.product.device_for_attestation=mustang
+ro.product.manufacturer_for_attestation=Google
+ro.system_ext.build.date=Sun Dec 21 03:28:25 UTC 2025
+ro.system_ext.build.date.utc=1766287705
+ro.system_ext.build.fingerprint=google/mustang/mustang:16/BP4A.260205.001/14624666:user/release-keys
+ro.system_ext.build.id=BP4A.260205.001
+ro.system_ext.build.tags=release-keys
+ro.system_ext.build.type=user
+ro.system_ext.build.version.incremental=14624666
+ro.system_ext.build.version.release=16
+ro.system_ext.build.version.release_or_codename=16
+ro.system_ext.build.version.sdk=36
+ro.system_ext.build.version.sdk_full=36.1
+####################################
+# from variable PRODUCT_SYSTEM_EXT_PROPERTIES
+####################################
+ro.camerax.extensions.enabled=true
+remote_provisioning.use_cert_processor=false
+ro.view.vrr.velocity_threshold=120@0
+ro.adb.secure=1
+ro.audio.ihaladaptervendorextension_enabled=true
+ro.config.isolated_compilation_enabled=true
+# end of file
+
