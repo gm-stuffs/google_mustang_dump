@@ -1,0 +1,5 @@
+service ambience_hub /vendor/bin/hw/vendor.google.ambience_hub-service
+    class hal
+    user system
+    group system
+

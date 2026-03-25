@@ -1,0 +1,15 @@
+{
+  "transport_type_priority": [
+    100,
+    101
+  ],
+  "uart_device_port": "/dev/ttyS1",
+  "fast_download_enabled": true,
+  "sar_backoff_high_resolution_enabled": true,
+  "ble_non_connection_sar_enabled": true,
+  "accelerated_bt_on_enabled": true,
+  "thread_dispatcher_enabled": true,
+  "reg_on_delay_ms": 100,
+  "bt_power_controlled_by_lpp": true,
+  "low_power_mode_enabled": true
+}

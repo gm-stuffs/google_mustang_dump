@@ -1,0 +1,56 @@
+on init
+    chmod 555 /sys/kernel/tracing/instances/i2c_google
+    chmod 444 /sys/kernel/tracing/instances/i2c_google/trace
+    chown system system /sys/kernel/tracing/instances/i2c_google
+    chown system system /sys/kernel/tracing/instances/i2c_google/trace
+
+    chmod 555 /sys/kernel/tracing/instances/irq_gia_google
+    chmod 444 /sys/kernel/tracing/instances/irq_gia_google/trace
+    chown system system /sys/kernel/tracing/instances/irq_gia_google
+    chown system system /sys/kernel/tracing/instances/irq_gia_google/trace
+
+    chmod 555 /sys/kernel/tracing/instances/pinctrl_google
+    chmod 444 /sys/kernel/tracing/instances/pinctrl_google/trace
+    chown system system /sys/kernel/tracing/instances/pinctrl_google
+    chown system system /sys/kernel/tracing/instances/pinctrl_google/trace
+
+    chmod 555 /sys/kernel/tracing/instances/google_8250
+    chmod 444 /sys/kernel/tracing/instances/google_8250/trace
+    chown system system /sys/kernel/tracing/instances/google_8250
+    chown system system /sys/kernel/tracing/instances/google_8250/trace
+
+    chmod 555 /sys/kernel/tracing/instances/i3c_master
+    chmod 444 /sys/kernel/tracing/instances/i3c_master/trace
+    chown system system /sys/kernel/tracing/instances/i3c_master
+    chown system system /sys/kernel/tracing/instances/i3c_master/trace
+
+    chmod 555 /sys/kernel/tracing/instances/spi_dw_mmio
+    chmod 444 /sys/kernel/tracing/instances/spi_dw_mmio/trace
+    chown system system /sys/kernel/tracing/instances/spi_dw_mmio
+    chown system system /sys/kernel/tracing/instances/spi_dw_mmio/trace
+
+    # Keep the buffer size small. This size is practically enough for debug purpose.
+    # Having low size helps because this entire buffer gets dumped in bugreport.
+    # Having a large size can impact bugreport size and time it takes to pack/unpack.
+    write /sys/kernel/tracing/instances/i2c_google/buffer_size_kb 15
+    write /sys/kernel/tracing/instances/irq_gia_google/buffer_size_kb 15
+    write /sys/kernel/tracing/instances/pinctrl_google/buffer_size_kb 15
+    write /sys/kernel/tracing/instances/google_8250/buffer_size_kb 15
+    write /sys/kernel/tracing/instances/i3c_master/buffer_size_kb 15
+    write /sys/kernel/tracing/instances/spi_dw_mmio/buffer_size_kb 15
+
+    # Reduce some GIA events from interrupt handler
+    write /sys/kernel/tracing/instances/irq_gia_google/events/irq_gia/gia_get_power/enable 0
+    write /sys/kernel/tracing/instances/irq_gia_google/events/irq_gia/gia_put_power/enable 0
+    write /sys/kernel/tracing/instances/irq_gia_google/events/irq_gia/gia_irq_eoi/enable 0
+
+on boot
+    # This will repopulate extended sysfs files support to all IRQs
+    write /sys/kernel/repopulate_irq_extended 1
+
+on property:ro.debuggable=0 && property:sys.boot_completed=1
+    rmdir /sys/kernel/tracing/instances/i2c_google
+    rmdir /sys/kernel/tracing/instances/pinctrl_google
+    rmdir /sys/kernel/tracing/instances/google_8250
+    rmdir /sys/kernel/tracing/instances/i3c_master
+    rmdir /sys/kernel/tracing/instances/spi_dw_mmio

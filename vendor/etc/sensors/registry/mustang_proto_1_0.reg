@@ -1,0 +1,68 @@
+#
+# Mustang sensor device configuration registry script for the Proto 1.0 stage.
+#
+# Source of truth: go/pixel-sensor-list
+#
+
+#
+# CDT Filter <CDT>:<mask>
+# CDT format: <0xPPPPSJIV> (P:Product, S:Stage, J:Major, I:Minor, V:Variant)
+# go/pixel-cdt-lga
+#
+
+?+0x52100:0xFFFFFFF0
+
+#
+# Record reg_script.
+#
+
++/
+reg_script=mustang_proto_1_0.reg
+
+#
+# Sensors
+#
+
+# MAG 0 (MMC5616WA)
++/dev/mmc5616/0
+  priority=0
++/dev/mmc5616/0/mag
+  name=MMC5616 Magnetometer 0
+
+# MAG 1 (MMC5616WA)
++/dev/mmc5616/1
+  bus_name=i3c4
+  bus_freq_hz=400000
+  i3c_freq_hz=6250000
+  bus_addr=0x30
+  i3c_addr=0x14
+  priority=1
++/dev/mmc5616/1/mag
+  orientation_transform=-1 -2 3
+  name=MMC5616 Magnetometer 1
+
+# ALSP (TMD3743)
++/dev/tmd3743/0/als
+  x_scale=21.246
+  lux_scale=37.809
+  z_scale=33.987
+  x_crgbw_coefs=1 -1.012 -0.914 0.925 0.535
+  lux_crgbw_coefs=1 -1.034 1.201 -1.167 0.146
+  z_crgbw_coefs=1 -2.769 -5.995 7.763 1.116
+
++/dev/tmd3743/0/prox
+  pulse_count=4
+  pulse_len_us=125
+
+# RAINBOW (VD6282)
++/dev/vd6282/0/spectral
+  # Golden values for calibration.
+  golden_rals_r=1001.69739596466
+  golden_rals_g=1073.72161998626
+  golden_rals_b=268.673206758362
+  golden_rals_clr1=4710.17353586704
+  golden_rals_ir=3089.47720953848
+  golden_rals_clr2=4780.09375269133
+
++/dev/vd6282/0/rls
+  lux_scale=114.290481

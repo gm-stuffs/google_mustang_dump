@@ -1,0 +1,2 @@
+on property:vendor.all.modules.ready=1
+    exec  u:r:h2omg_vendor:s0 -- /vendor/bin/hw/init.h2omg.sh

@@ -1,0 +1,10 @@
+service google_battery.ekf /vendor/bin/hw/vendor.google.google_battery.ekf.service
+    oneshot
+    class hal
+    user system
+    group system
+
+on property:vendor.all.modules.ready=1 && property:vendor.all.devices.ready=1
+    chown system system /sys/class/power_supply/vimon/device/bms_monitor
+
+    start google_battery.ekf
