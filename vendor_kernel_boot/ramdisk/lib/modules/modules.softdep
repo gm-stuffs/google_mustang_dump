@@ -1,0 +1,6 @@
+# Soft dependencies extracted from modules themselves.
+softdep trusty_virtio pre: trusty-ipc
+softdep pixel_em pre: exynos-acme
+softdep touch_bus_negotiator pre: touch_offload
+softdep pixel_stat_mm pre: pixel_stat_sysfs
+softdep google_bcl pre: i2c-acpm

@@ -1,0 +1,8 @@
+product/priv-app/Phonesky/Phonesky.apk.zst
+product/priv-app/PrebuiltBugle/PrebuiltBugle.apk.zst
+product/priv-app/PixelCameraServices/PixelCameraServices.apk.zst
+product/priv-app/DevicePersonalizationAiAiPrebuiltPixel2025/DevicePersonalizationAiAiPrebuiltPixel2025.apk.zst
+product/app/YouTube/YouTube.apk.zst
+product/app/Photos/Photos.apk.zst
+product/app/Maps/Maps.apk.zst
+product/app/PrebuiltGmail/PrebuiltGmail.apk.zst
